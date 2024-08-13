@@ -1,0 +1,13 @@
+body {
+    width: 800px;
+    margin: auto;
+}
+
+nav {
+    float: left;
+	width: 120px;
+}
+
+footer {
+    clear: both;
+}

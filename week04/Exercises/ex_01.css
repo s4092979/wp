@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+    font-size: 36pt;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial;
+}
+
+p {
+    color: blue;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 20pt;
+    line-height: 30pt;
+}
