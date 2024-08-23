@@ -1,5 +1,5 @@
 function home() {
-
+    location.href = "index.html"
 }
 
 function doMenu() {

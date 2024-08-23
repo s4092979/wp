@@ -2,6 +2,7 @@ body {
     width: 1200px;
     margin: auto;
     font-family: "Ysabeau SC";
+    color: #36454f;
 }
 
 main.home {
@@ -10,17 +11,61 @@ main.home {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poetson One";
+    margin-left: 20px;
+    font-size: 60px;
+}
+
+.title {
+    float: left;
+    font-family: "Permanent Marker";
+    color: #e57f3d;
+    margin-left: 20px;
+    font-size: 86px;
+}
+
+.subTitle {
+    float: left;
+    clear: left;
+    color: #008080;
 }
 
 nav {
     background-color: #008080;
-    height: 60px;
+    height: 65px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 nav img {
     float: left;
-    height: 40px;
-    padding-left: 20px;
+    height: 55px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+nav select {
+    float: left;
+    padding-top: 5px;
+    margin-top: 10px;
+    height: 35px;
+}
+
+footer {
+    background-color: #e57f3d;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img.mainImg {
+    float: right;
+    border-radius: 50%;
+    height: 480px;
+    margin: 48px;
 }
