@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Pets Victoria logo" onclick=home();>
+            <form>
+                <select id="navSelect" onchange=doMenu();>
+                    <option value="">Select an Option...</option>
+                    <option value="index.html">Home</option>
+                    <option value="pets.html">Pets</option>
+                    <option value="add.html">Add new pet</option>
+                    <option value="gallery.html">Gallery</option>
+                </select>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <p class="petsHeading">
+            Pets Victoria has a lot to offer
+        </p>
+        <p class="petsText">
+            For almost two decades, Pets Victoria has helped in creating true social change by bringing pet adoption into the mainstream. Our work has helped make a difference to the Victorian rescue community and thousands of pets in need of rescuse and rehabilitation. But, until every pet is safe, respected, and loved, we all still have big, hairy work to do.
+        </p>
+        <div class="galleryGrid">
+            <div>
+                <img src="images/cat1.jpeg" alt="Milo">
+                <p>Milo</p>
+            </div>
+            <div>
+                <img src="images/dog1.jpeg" alt="Baxter">
+                <p>Baxter</p>
+            </div>
+            <div>
+                <img src="images/cat2.jpeg" alt="Luna">
+                <p>Luna</p>
+            </div>
+            <div>
+                <img src="images/dog2.jpeg" alt="Willow">
+                <p>Willow</p>
+            </div>
+            <div>
+                <img src="images/cat3.jpeg" alt="Oliver">
+                <p>Oliver</p>
+            </div>
+            <div>
+                <img src="images/dog3.jpeg" alt="Bella">
+                <p>Bella</p>
+            </div>
+        </div>
+    </main>
+    <footer>© Copyright s4092979 David Hollins. All Rights Reserved | Designed for Pets Victora</footer>
+</body>
