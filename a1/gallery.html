@@ -15,13 +15,19 @@
             <img src="images/logo.png" alt="Pets Victoria logo" onclick=home();>
             <form>
                 <select id="navSelect" onchange=doMenu();>
-                    <option value="">Select an Option...</option>
+                    <option value="" disabled selected>Select an Option...</option>
                     <option value="index.html">Home</option>
                     <option value="pets.html">Pets</option>
                     <option value="add.html">Add new pet</option>
                     <option value="gallery.html">Gallery</option>
                 </select>
             </form>
+            <div class="searchContainer">
+                <form>
+                    <input type="text" name="search" placeholder="Search">
+                    <span class="material-symbols-outlined">search</span>
+                </form>
+            </div>
         </nav>
     </header>
     <main>
