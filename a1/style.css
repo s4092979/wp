@@ -37,7 +37,7 @@ nav select {
     margin-top: 10px;
     height: 35px;
 }
-nav.searchContainer {
+nav .searchContainer {
     float: right;
     margin-top: 10px;
     margin-right: 15px;
@@ -133,8 +133,22 @@ main.home {
 .newPet .buttons {
     text-align: center;
 }
-.newPet .buttons input {
-    margin: 10px;
+.newPet button {
+    margin: 20px 10px;
+    font-size: 20px;
+}
+.newPet .material-symbols-outlined {
+    font-size: 15px;
+}
+.newPet #submit {
+    background-color: #008080;
+    border-color: #008080;
+    border-radius: 20px;
+}
+.newPet #reset {
+    background-color: white;
+    border-color: #008080;
+    border-radius: 20px;
 }
 
 /* Gallery of pets */
