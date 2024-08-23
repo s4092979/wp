@@ -73,6 +73,7 @@ img.mainImg {
 .petsHeading {
     text-align: center;
     font-weight: bolder;
+    font-family: "Poetson One";
 }
 
 .petsText {
@@ -97,4 +98,22 @@ img.mainImg {
 .petsTable th {
     background-color: #fcf9ec;
     color: #008080;
+}
+
+.newPet {
+    #name, #type, #description, #caption, #age, #location {
+        width: 100%;
+    }
+}
+
+.newPet label::after {
+    content: " *";
+    color: red;
+}
+
+.buttons {
+    text-align: center;
+    input {
+        margin: 10px;
+    }
 }
