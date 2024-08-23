@@ -15,20 +15,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 60px;
 }
 
-.title {
-    float: left;
-    font-family: "Permanent Marker";
-    color: #e57f3d;
-    margin-left: 20px;
-    font-size: 86px;
-}
-
-.subTitle {
-    float: left;
-    clear: left;
-    color: #008080;
-}
-
 nav {
     background-color: #008080;
     height: 65px;
@@ -63,9 +49,52 @@ footer {
     display: table;
 }
 
+.title {
+    float: left;
+    font-family: "Permanent Marker";
+    color: #e57f3d;
+    margin-left: 20px;
+    font-size: 86px;
+}
+
+.subTitle {
+    float: left;
+    clear: left;
+    color: #008080;
+}
+
 img.mainImg {
     float: right;
     border-radius: 50%;
     height: 480px;
     margin: 48px;
+}
+
+.petsHeading {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.petsText {
+    text-align: center;
+}
+
+.petsImg {
+    float: left;
+    width: 496px;
+    margin-top: 10px;
+    margin-bottom: 38px;
+}
+
+.petsTable {
+    float: right;
+    text-align: left;
+    width: 548px;
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.petsTable th {
+    background-color: #fcf9ec;
+    color: #008080;
 }
