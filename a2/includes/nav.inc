@@ -1,3 +1,4 @@
+    <header>
         <nav>
             <img src="images/logo.png" alt="Pets Victoria logo" onclick=home();>
             <form>
@@ -16,3 +17,4 @@
                 </form>
             </div>
         </nav>
+    </header>

@@ -1,10 +1,11 @@
 <?php
+    include "includes/db_connect.inc";
     $title = "Pets Victoria";
     include "includes/header.inc";
+    echo "\n";
+    include "includes/nav.inc";
+    echo "\n";
 ?>
-    <header>
-        <?php include "includes/nav.inc"; ?>
-    </header>
     <main>
         <p class="petsHeading">
             Add a pet
@@ -43,6 +44,4 @@
             </div>
         </form>
     </main>
-    <footer>© Copyright s4092979 David Hollins. All Rights Reserved | Designed for Pets Victoria</footer>
-</body>
-</html>
+<?php include "includes/footer.inc"; ?>
