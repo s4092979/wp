@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pets Victoria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Pets Victoria logo" onclick=home();>
+            <form>
+                <select id="navSelect" onchange=doMenu();>
+                    <option value="" disabled selected>Select an Option...</option>
+                    <option value="index.html">Home</option>
+                    <option value="pets.html">Pets</option>
+                    <option value="add.html">Add new pet</option>
+                    <option value="gallery.html">Gallery</option>
+                </select>
+            </form>
+            <div class="searchContainer">
+                <form>
+                    <input type="text" name="search" placeholder="Search">
+                    <span class="material-symbols-outlined">search</span>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="home">
+        <img class="mainImg" src="images/main.jpg" alt="A dog and a cat">
+        <h1 class="title">Pets Victoria</h1>
+        <h2 class="subTitle">Welcome To Pet<br>Adoption</h2>
+    </main>
+    <footer>© Copyright s4092979 David Hollins. All Rights Reserved | Designed for Pets Victoria</footer>
+</body>
+</html>
