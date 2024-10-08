@@ -1,11 +1,8 @@
 <?php
-    $title = "Pets Victoria";
-    include "includes/header.inc";
-    echo "\n";
-    include "includes/db_connect.inc";
-    echo "\n";
-    include "includes/nav.inc";
-    echo "\n";
+$title = "Pets Victoria";
+include "includes/header.inc";
+include "includes/nav.inc";
+include "includes/db_connect.inc";
 ?>
     <main>
         <p class="petsHeading">

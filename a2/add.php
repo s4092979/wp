@@ -11,7 +11,7 @@ include "includes/db_connect.inc";
     <p class="petsText">
         You can add a new pet here
     </p>
-    <form class="newPet">
+    <form class="newPet" action="add_process.php" method="post" enctype="multipart/form-data">
         <label for="name">Pet name:</label><br>
         <input type="text" id="name" name="name" placeholder="Provide a name for the pet" required><br>
         <label for="type">Type:</label><br>
@@ -19,6 +19,7 @@ include "includes/db_connect.inc";
             <option value="" disabled selected>--Choose an option--</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
+            <option value="other">Other</option>
         </select><br>
         <label for="description">Description</label><br>
         <textarea rows="2" id="description" name="description" placeholder="Describe the pet briefly" required></textarea><br>
