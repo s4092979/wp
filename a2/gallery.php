@@ -21,11 +21,11 @@ include "includes/db_connect.inc";
             print "<div class='box'>\n";
             print "<div class='container'>\n";
             print "<img src='images/{$row['image']}' alt={$row['petname']}>\n";
-            print "<div class='overlay'>\n";
+            print "<a class='overlay' href=details.php?id={$row['petid']}>\n";
             print "<div class='text'>\n";
             print "<span class='material-symbols-outlined'>search</span><br>\n";
-            print "<a href=details.php?id={$row['petid']}>Discover more!</a>\n";
-            print "</div></div></div>\n";
+            print "Discover more!\n";
+            print "</div></div></a>\n";
             print "<p>{$row['petname']}</p>\n";
             print "</div>\n";
         }
