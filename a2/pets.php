@@ -25,7 +25,7 @@ include "includes/db_connect.inc";
             if ($result->num_rows > 0) {
                 while ($row = mysqli_fetch_array($result)) {
                     print "<tr>\n";
-                    print "<td><a href=details.php?id={$row['petid']}>" . htmlspecialchars($row['petname']) . "</a></td>\n";
+                    print "<td><a href='details.php?id={$row['petid']}'>" . htmlspecialchars($row['petname']) . "</a></td>\n";
                     print "<td>" . htmlspecialchars($row['type']) . "</td>\n";
                     print "<td>" . htmlspecialchars($row['age']) . "</td>\n";
                     print "<td>" . htmlspecialchars($row['location']) . "</td>\n";
