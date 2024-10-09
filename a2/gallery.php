@@ -20,13 +20,13 @@ include "includes/db_connect.inc";
         while ($row = mysqli_fetch_array($result)) {
             print "<div class='box'>\n";
             print "<div class='container'>\n";
-            print "<img src='images/{$row['image']}' alt={$row['petname']}>\n";
+            print "<img src='images/" . htmlspecialchars($row['image']) . "' alt=" . htmlspecialchars($row['caption']) . ">\n";
             print "<a class='overlay' href=details.php?id={$row['petid']}>\n";
             print "<div class='text'>\n";
             print "<span class='material-symbols-outlined'>search</span><br>\n";
             print "Discover more!\n";
             print "</div></div></a>\n";
-            print "<p>{$row['petname']}</p>\n";
+            print "<p>" . htmlspecialchars($row['petname']) . "</p>\n";
             print "</div>\n";
         }
     }
