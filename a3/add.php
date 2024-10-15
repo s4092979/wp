@@ -3,6 +3,36 @@ $title = "Pets Victoria";
 include "includes/header.inc";
 include "includes/nav.inc";
 include "includes/db_connect.inc";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    foreach ($_POST as $key => $val) {
+        $$key = trim($val);
+    }
+    $image = $_FILES['image']['name'];
+    $temp = $_FILES['image']['tmp_name'];
+    $error = $_FILES['image']['error'];
+
+    $sql = "INSERT INTO pets(petname,type,description,image,caption,age,location) VALUES (?,?,?,?,?,?,?)";
+
+    $stmt = $conn->prepare($sql);
+
+    if (!$stmt) {
+        exit("An error occurred");
+    }
+
+    $stmt->bind_param("sssssis", $name, $type, $description, $image, $caption, $age, $location);
+    $stmt->execute();
+    if ($stmt->affected_rows > 0) {
+        echo '<p>New record successfully inserted into the database</p>';
+        if (move_uploaded_file($temp, 'images/' . $image)) {
+            echo "<p>Image moved to folder</p>";
+        } else {
+            echo "<p>Image not moved to folder</p>";
+        }
+    } else {
+        echo '<p>Record not inserted into the database</p>';
+    }
+}
 ?>
 <main>
     <p class="petsHeading">
@@ -11,7 +41,7 @@ include "includes/db_connect.inc";
     <p class="petsText">
         You can add a new pet here
     </p>
-    <form class="newPet" action="add_process.php" method="post" enctype="multipart/form-data">
+    <form class="newPet" action="add.php" method="post" enctype="multipart/form-data">
         <label for="name">Pet name:</label><br>
         <input type="text" id="name" name="name" placeholder="Provide a name for the pet" required><br>
         <label for="type">Type:</label><br>
