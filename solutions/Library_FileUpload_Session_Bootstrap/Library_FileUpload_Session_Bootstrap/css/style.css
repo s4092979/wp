@@ -1,0 +1,14 @@
+h3 {
+    font-style: italic;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+#display {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 0em;
+}
