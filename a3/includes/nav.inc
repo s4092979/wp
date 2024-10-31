@@ -1,5 +1,5 @@
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark mb-3 rounded">
+        <nav class="navbar navbar-expand-sm navbar-dark mb-3 rounded-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php">
                     <img src="images/logo.png" alt="Pets Victoria logo" style="width:40px;">
@@ -36,7 +36,7 @@
                     <?php } ?>
                         <form class="d-flex ms-auto">
                             <input class="form-control me-2" type="text" name="search" placeholder="Search">
-                            <button class="btn btn-primary" type="button">
+                            <button class="btn" type="button">
                                 <span class="material-symbols-outlined">search</span>
                             </button>
                         </form>
