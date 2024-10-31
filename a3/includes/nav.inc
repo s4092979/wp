@@ -7,8 +7,8 @@
                 <button class="navbar-toggler" type="buton" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" if="collapsibleNavbar">
-                    <ul class="navbar-nav me-auto">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav w-100">
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">Home</a>
                         </li>
@@ -34,7 +34,7 @@
                             <a class="nav-link" href="logout.php">Logout</a>
                         </li>
                     <?php } ?>
-                        <form class="d-flex">
+                        <form class="d-flex ms-auto">
                             <input class="form-control me-2" type="text" name="search" placeholder="Search">
                             <button class="btn btn-primary" type="button">
                                 <span class="material-symbols-outlined">search</span>
