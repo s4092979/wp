@@ -1,5 +1,4 @@
 body {
-    width: 1200px;
     margin: auto;
     font-family: "Ysabeau SC";
     color: #36454f;
@@ -21,29 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
     background-color: #008080;
-    height: 65px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-nav img {
-    float: left;
-    height: 55px;
-    padding-left: 40px;
-    padding-right: 20px;
-}
-nav select {
-    float: left;
-    padding-top: 5px;
-    margin-top: 10px;
-    height: 35px;
-}
-nav .searchContainer {
-    float: right;
-    margin-top: 10px;
-    margin-right: 15px;
-}
-nav input {
-    height: 28px;
 }
 nav .material-symbols-outlined {
     float: right;

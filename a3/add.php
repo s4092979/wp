@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $temp = $_FILES['image']['tmp_name'];
     $error = $_FILES['image']['error'];
 
-    $sql = "INSERT INTO pets(petname,type,description,image,caption,age,location) VALUES (?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO pets(petname,type,description,image,caption,age,location,username) VALUES (?,?,?,?,?,?,?,?)";
 
     $stmt = $conn->prepare($sql);
 
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit("An error occurred");
     }
 
-    $stmt->bind_param("sssssis", $name, $type, $description, $image, $caption, $age, $location);
+    $stmt->bind_param("sssssis", $name, $type, $description, $image, $caption, $age, $location, $_SESSION['username']);
     $stmt->execute();
     if ($stmt->affected_rows > 0) {
         echo '<p>New record successfully inserted into the database</p>';
@@ -33,6 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<p>Record not inserted into the database</p>';
     }
 }
+
+if (isset($_SESSION['username'])) {
 ?>
 <main>
     <p class="petsHeading">
@@ -73,4 +75,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </form>
 </main>
-<?php include "includes/footer.inc"; ?>
+<?php }
+include "includes/footer.inc"; ?>
