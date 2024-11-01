@@ -8,7 +8,7 @@ include "includes/db_connect.inc";
         <div class="col-1"></div>
 
         <!-- Carosel -->
-         <div id="demo" class="carousel slide col-4" data-bs-ride="carousel">
+         <div id="demo" class="carousel slide col-4 bg-dark" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
@@ -19,7 +19,7 @@ include "includes/db_connect.inc";
             </div>
 
             <!-- The slideshow/carosel -->
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="text-align:center;">
             <?php
                 $sql = "SELECT * FROM pets ORDER BY petid DESC LIMIT 4";
                 $result = $conn->query($sql);

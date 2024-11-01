@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit("An error occurred");
     }
 
-    $stmt->bind_param("sssssis", $name, $type, $description, $image, $caption, $age, $location, $_SESSION['username']);
+    $stmt->bind_param("sssssiss", $name, $type, $description, $image, $caption, $age, $location, $_SESSION['username']);
     $stmt->execute();
     if ($stmt->affected_rows > 0) {
         echo '<p>New record successfully inserted into the database</p>';
